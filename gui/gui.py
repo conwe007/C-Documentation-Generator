@@ -4,6 +4,9 @@ from tkinter import ttk
 import subprocess
 
 def generate(*args):
+    if(folder_in.get() == folder_out.get()):
+        status.set("Error: folders cannot be the same")
+        return
     status.set("Started")
     root.update_idletasks()
     command = StringVar()

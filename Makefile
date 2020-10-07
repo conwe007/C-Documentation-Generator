@@ -12,5 +12,5 @@ doc_gen: $(SRC)
 
 clean:
 	rm bin/*
-	rm docs/*.html
+	rm html/*.html
 	rm example/*.html
